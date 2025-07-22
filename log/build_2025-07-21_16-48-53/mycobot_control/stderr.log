@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2936, in get_entry_map
+    ep_map = self._ep_map
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2902, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _ep_map. Did you mean: '_dep_map'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jetcobot/dev_ws/src/mycobot_control/setup.py", line 5, in <module>
+    setup(
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+    return distutils.core.setup(**attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 185, in setup
+    return run_commands(dist)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 201, in run_commands
+    dist.run_commands()
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+    self.run_command(cmd)
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1233, in run_command
+    super().run_command(command)
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 988, in run_command
+    cmd_obj.run()
+  File "/usr/lib/python3/dist-packages/setuptools/command/install.py", line 78, in run
+    return orig.install.run(self)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/command/install.py", line 708, in run
+    self.run_command(cmd_name)
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+    self.distribution.run_command(command)
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1233, in run_command
+    super().run_command(command)
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 988, in run_command
+    cmd_obj.run()
+  File "/usr/lib/python3/dist-packages/setuptools/command/install_scripts.py", line 25, in run
+    self._install_ep_scripts()
+  File "/usr/lib/python3/dist-packages/setuptools/command/install_scripts.py", line 49, in _install_ep_scripts
+    for args in writer.get_args(dist, cmd.as_header()):
+  File "/usr/lib/python3/dist-packages/setuptools/command/easy_install.py", line 2241, in get_args
+    for name, ep in dist.get_entry_map(group).items():
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2938, in get_entry_map
+    ep_map = self._ep_map = EntryPoint.parse_map(
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2610, in parse_map
+    maps[group] = cls.parse_group(group, lines, dist)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2588, in parse_group
+    ep = cls.parse(line, dist)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2570, in parse
+    return cls(res['name'], res['module'], attrs, extras, dist)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2487, in __init__
+    raise ValueError("Invalid module name", module_name)
+ValueError: ('Invalid module name', '.mycobot_node')

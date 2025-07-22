@@ -1,0 +1,2 @@
+setuptools
+std_msgs

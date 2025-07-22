@@ -1,0 +1,21 @@
+[1.675s] Invoking command in '/home/jetcobot/dev_ws/src/mycobot_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(aac0) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jetcobot/dev_ws/build/mycobot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(aac0) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mycobot_control build --build-base /home/jetcobot/dev_ws/build/mycobot_control/build install --record /home/jetcobot/dev_ws/build/mycobot_control/install.log --single-version-externally-managed install_data
+[2.195s] running egg_info
+[2.232s] writing ../../build/mycobot_control/mycobot_control.egg-info/PKG-INFO
+[2.233s] writing dependency_links to ../../build/mycobot_control/mycobot_control.egg-info/dependency_links.txt
+[2.234s] writing entry points to ../../build/mycobot_control/mycobot_control.egg-info/entry_points.txt
+[2.234s] writing requirements to ../../build/mycobot_control/mycobot_control.egg-info/requires.txt
+[2.235s] writing top-level names to ../../build/mycobot_control/mycobot_control.egg-info/top_level.txt
+[2.313s] reading manifest file '../../build/mycobot_control/mycobot_control.egg-info/SOURCES.txt'
+[2.314s] writing manifest file '../../build/mycobot_control/mycobot_control.egg-info/SOURCES.txt'
+[2.314s] running build
+[2.314s] running build_py
+[2.314s] running install
+[2.324s] running install_lib
+[2.364s] running install_data
+[2.364s] running install_egg_info
+[2.405s] removing '/home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control-0.0.0-py3.12.egg-info' (and everything under it)
+[2.406s] Copying ../../build/mycobot_control/mycobot_control.egg-info to /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control-0.0.0-py3.12.egg-info
+[2.407s] running install_scripts
+[2.665s] Installing mycobot_node script to /home/jetcobot/dev_ws/install/mycobot_control/lib/mycobot_control
+[2.665s] writing list of installed files to '/home/jetcobot/dev_ws/build/mycobot_control/install.log'
+[2.745s] Invoked command in '/home/jetcobot/dev_ws/src/mycobot_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(aac0) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jetcobot/dev_ws/build/mycobot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(aac0) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mycobot_control build --build-base /home/jetcobot/dev_ws/build/mycobot_control/build install --record /home/jetcobot/dev_ws/build/mycobot_control/install.log --single-version-externally-managed install_data

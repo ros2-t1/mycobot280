@@ -1,0 +1,95 @@
+[1.963s] Invoking command in '/home/jetcobot/dev_ws/src/mycobot_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(aac0) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jetcobot/dev_ws/build/mycobot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(aac0) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mycobot_control build --build-base /home/jetcobot/dev_ws/build/mycobot_control/build install --record /home/jetcobot/dev_ws/build/mycobot_control/install.log --single-version-externally-managed install_data
+[2.477s] running egg_info
+[2.477s] creating ../../build/mycobot_control/mycobot_control.egg-info
+[2.514s] writing ../../build/mycobot_control/mycobot_control.egg-info/PKG-INFO
+[2.515s] writing dependency_links to ../../build/mycobot_control/mycobot_control.egg-info/dependency_links.txt
+[2.515s] writing entry points to ../../build/mycobot_control/mycobot_control.egg-info/entry_points.txt
+[2.515s] writing requirements to ../../build/mycobot_control/mycobot_control.egg-info/requires.txt
+[2.515s] writing top-level names to ../../build/mycobot_control/mycobot_control.egg-info/top_level.txt
+[2.515s] writing manifest file '../../build/mycobot_control/mycobot_control.egg-info/SOURCES.txt'
+[2.592s] reading manifest file '../../build/mycobot_control/mycobot_control.egg-info/SOURCES.txt'
+[2.593s] writing manifest file '../../build/mycobot_control/mycobot_control.egg-info/SOURCES.txt'
+[2.593s] running build
+[2.593s] running build_py
+[2.593s] creating /home/jetcobot/dev_ws/build/mycobot_control/build
+[2.593s] creating /home/jetcobot/dev_ws/build/mycobot_control/build/lib
+[2.594s] creating /home/jetcobot/dev_ws/build/mycobot_control/build/lib/mycobot_control
+[2.594s] copying mycobot_control/__init__.py -> /home/jetcobot/dev_ws/build/mycobot_control/build/lib/mycobot_control
+[2.594s] copying mycobot_control/mycobot_node.py -> /home/jetcobot/dev_ws/build/mycobot_control/build/lib/mycobot_control
+[2.594s] running install
+[2.604s] running install_lib
+[2.643s] creating /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control
+[2.643s] copying /home/jetcobot/dev_ws/build/mycobot_control/build/lib/mycobot_control/__init__.py -> /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control
+[2.643s] copying /home/jetcobot/dev_ws/build/mycobot_control/build/lib/mycobot_control/mycobot_node.py -> /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control
+[2.645s] byte-compiling /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control/__init__.py to __init__.cpython-312.pyc
+[2.645s] byte-compiling /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control/mycobot_node.py to mycobot_node.cpython-312.pyc
+[2.646s] running install_data
+[2.646s] creating /home/jetcobot/dev_ws/install/mycobot_control/share/ament_index
+[2.646s] creating /home/jetcobot/dev_ws/install/mycobot_control/share/ament_index/resource_index
+[2.646s] creating /home/jetcobot/dev_ws/install/mycobot_control/share/ament_index/resource_index/packages
+[2.646s] copying resource/mycobot_control -> /home/jetcobot/dev_ws/install/mycobot_control/share/ament_index/resource_index/packages
+[2.646s] copying package.xml -> /home/jetcobot/dev_ws/install/mycobot_control/share/mycobot_control
+[2.646s] running install_egg_info
+[2.704s] Copying ../../build/mycobot_control/mycobot_control.egg-info to /home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages/mycobot_control-0.0.0-py3.12.egg-info
+[2.767s] running install_scripts
+[3.025s] Traceback (most recent call last):
+[3.025s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2936, in get_entry_map
+[3.028s]     ep_map = self._ep_map
+[3.028s]              ^^^^^^^^^^^^
+[3.028s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2902, in __getattr__
+[3.028s]     raise AttributeError(attr)
+[3.028s] AttributeError: _ep_map. Did you mean: '_dep_map'?
+[3.028s] 
+[3.029s] During handling of the above exception, another exception occurred:
+[3.029s] 
+[3.029s] Traceback (most recent call last):
+[3.029s]   File "/home/jetcobot/dev_ws/src/mycobot_control/setup.py", line 5, in <module>
+[3.029s]     setup(
+[3.029s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+[3.029s]     return distutils.core.setup(**attrs)
+[3.029s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.029s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 185, in setup
+[3.030s]     return run_commands(dist)
+[3.030s]            ^^^^^^^^^^^^^^^^^^
+[3.030s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 201, in run_commands
+[3.030s]     dist.run_commands()
+[3.030s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+[3.031s]     self.run_command(cmd)
+[3.031s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1233, in run_command
+[3.033s]     super().run_command(command)
+[3.033s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 988, in run_command
+[3.033s]     cmd_obj.run()
+[3.033s]   File "/usr/lib/python3/dist-packages/setuptools/command/install.py", line 78, in run
+[3.033s]     return orig.install.run(self)
+[3.033s]            ^^^^^^^^^^^^^^^^^^^^^^
+[3.034s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/command/install.py", line 708, in run
+[3.034s]     self.run_command(cmd_name)
+[3.034s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+[3.035s]     self.distribution.run_command(command)
+[3.035s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1233, in run_command
+[3.035s]     super().run_command(command)
+[3.035s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 988, in run_command
+[3.036s]     cmd_obj.run()
+[3.036s]   File "/usr/lib/python3/dist-packages/setuptools/command/install_scripts.py", line 25, in run
+[3.036s]     self._install_ep_scripts()
+[3.036s]   File "/usr/lib/python3/dist-packages/setuptools/command/install_scripts.py", line 49, in _install_ep_scripts
+[3.036s]     for args in writer.get_args(dist, cmd.as_header()):
+[3.036s]   File "/usr/lib/python3/dist-packages/setuptools/command/easy_install.py", line 2241, in get_args
+[3.038s]     for name, ep in dist.get_entry_map(group).items():
+[3.038s]                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.038s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2938, in get_entry_map
+[3.039s]     ep_map = self._ep_map = EntryPoint.parse_map(
+[3.039s]                             ^^^^^^^^^^^^^^^^^^^^^
+[3.039s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2610, in parse_map
+[3.039s]     maps[group] = cls.parse_group(group, lines, dist)
+[3.039s]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.040s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2588, in parse_group
+[3.040s]     ep = cls.parse(line, dist)
+[3.040s]          ^^^^^^^^^^^^^^^^^^^^^
+[3.040s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2570, in parse
+[3.041s]     return cls(res['name'], res['module'], attrs, extras, dist)
+[3.041s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.041s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2487, in __init__
+[3.041s]     raise ValueError("Invalid module name", module_name)
+[3.041s] ValueError: ('Invalid module name', '.mycobot_node')
+[3.123s] Invoked command in '/home/jetcobot/dev_ws/src/mycobot_control' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(aac0) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jetcobot/dev_ws/build/mycobot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetcobot/dev_ws/install/mycobot_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(aac0) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mycobot_control build --build-base /home/jetcobot/dev_ws/build/mycobot_control/build install --record /home/jetcobot/dev_ws/build/mycobot_control/install.log --single-version-externally-managed install_data
