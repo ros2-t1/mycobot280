@@ -14,13 +14,14 @@ setup(
     install_requires=['setuptools', 'std_msgs'],
     zip_safe=True,
     maintainer='jetcobot',
-    maintainer_email='jetcobot@todo.todo',
+    maintainer_email='jubineduros@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'mycobot_node =  mycobot_control.mycobot_node:main',
+            'aruco_launcher = mycobot_control.aruco_launcher:main',
         ],
     },
 )
